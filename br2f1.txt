@@ -1,0 +1,2 @@
+a file in branch2
+updates in branch2's file
