@@ -186,6 +186,7 @@ background-blend-mode: overlay;
     border: black solid 2px;
     padding: 0.2em 2em;
     text-align: center;
+    word-break: break-all;
 }
  h2{
     font-family: networld;
@@ -193,3 +194,7 @@ background-blend-mode: overlay;
     font-size: xxx-large;
     font-weight: bold;
 }
+table{
+    table-layout: fixed;
+}
+
