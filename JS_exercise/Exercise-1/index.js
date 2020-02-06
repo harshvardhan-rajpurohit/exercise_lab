@@ -112,7 +112,8 @@ if(document.getElementById("add_update_btn").value == "Add"){
     document.getElementById("table_main").innerHTML+="<tr><td class='td_border'>"+f_name+"</td><td class='td_border'>"+l_name+"</td><td><input type='button' value='Edit' onclick='edt(this)'></input></td><td><input type='button' value='Delete' onclick='del(this)'></input></td></tr>";
     document.getElementById("frst_name").value=" ";
     document.getElementById("lst_name").value=" ";
-    }
+    // render_table();
+}
     else {
         alert("Please enter values in textboxes!");
     }
@@ -147,4 +148,33 @@ function del(r){
     document.getElementById("frst_name").value=" ";
     document.getElementById("lst_name").value=" ";
     document.getElementById("add_update_btn").value="Add";
+}
+
+
+let rand_value = function () {
+    let val = Math.random().toString(32).substr(2,16);
+    return val;
+  };
+
+  
+let render_arr = [];
+let obj = {
+    first_name:rand_value(),
+    last_name:rand_value()
+}
+for (let j = 0; j < 10; j++) {
+    obj ={
+        first_name:rand_value(),
+        last_name:rand_value()
+    }
+render_arr.push(obj);
+}
+function render_table(){
+    let rows_n =  document.getElementById("table_main").rows.length;
+    let val;
+    for (let i = 0; i < 10; i++) {
+        val = "<tr><td class='td_border'>"+render_arr[i].first_name+"</td><td class='td_border'>"+render_arr[i].last_name+"</td><td><input type='button' value='Edit' onclick='edt(this)'></input></td><td><input type='button' value='Delete' onclick='del(this)'></input></td></tr>"
+        document.getElementById("table_main").innerHTML+= val;
+    }
+    
 }
