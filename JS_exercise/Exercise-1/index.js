@@ -146,4 +146,5 @@ function del(r){
     document.getElementById("table_main").deleteRow(rnum);
     document.getElementById("frst_name").value=" ";
     document.getElementById("lst_name").value=" ";
+    document.getElementById("add_update_btn").value="Add";
 }
