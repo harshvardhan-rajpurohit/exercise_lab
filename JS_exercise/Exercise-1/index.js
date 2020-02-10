@@ -112,7 +112,6 @@ if(document.getElementById("add_update_btn").value == "Add"){
     document.getElementById("table_main").innerHTML+="<tr><td class='td_border'>"+f_name+"</td><td class='td_border'>"+l_name+"</td><td><input type='button' value='Edit' onclick='edt(this)'></input></td><td><input type='button' value='Delete' onclick='del(this)'></input></td></tr>";
     document.getElementById("frst_name").value=" ";
     document.getElementById("lst_name").value=" ";
-    // render_table();
 }
     else {
         alert("Please enter values in textboxes!");
