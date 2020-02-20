@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rapidops Talent LMS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/dashboard.css">
+    <script src="JS/dashboard.js"></script>     
+</head>
+<body>
+  
+
+<!-- ------------------------------NAV BAR ---------------------------------- -->
+    <nav class ="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class ="container-fluid">
+            <div class="navbar-brand">
+                <img src="Images/rapidops.png" alt="Rapidops">
+            </div>
+            <div class="navbar-item">
+                <p class="lead">Talent LMS Portal</p>
+            </div>
+            <div class="navbar-brand">
+                <p id="userText">User</p>
+                <a href="login_signup_page.html" class="btn btn-outline-secondary btn-sm"  onclick="logout()">Logout</a>
+            </div>
+            
+        </div>
+    </nav>
+
+<!-- -------------------------------COURSE CARDS----------------------------- -->
+<hr>
+<div class="container-fluid padding">
+    <div class="container" id="courseCards">
+        <div class="row padding">
+            <div class="col-md-4">
+                <div class="card" id="html">
+                    <img src="Images/html.png" alt="HTML course" class="card-img-top">
+                    <div class="card-body">
+                        <hr>
+                        <h4 class="card-title">HTML</h4>
+                            <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#coursesModal" onclick="assignCourse(this)"> Assign Course</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" id="css">
+                    <img src="Images/css.png" alt="CSS course" class="card-img-top">
+                    <div class="card-body">
+                        <hr>
+                        <h4 class="card-title">CSS</h4>
+                            <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#coursesModal" onclick="assignCourse(this)"> Assign Course</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" id="js">
+                    <img src="Images/js.png" alt="JS Course" class="card-img-top">
+                    <div class="card-body">
+                        <hr>
+                        <h4 class="card-title">JS</h4>
+                            <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#coursesModal" onclick="assignCourse(this)"> Assign Course</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row padding">
+            <div class="col-md-4">
+                <div class="card" id="git">
+                    <img src="Images/gir.png" alt="Git course" class="card-img-top">
+                    <div class="card-body">
+                        <hr>
+                        <h4 class="card-title">GIT</h4>
+                            <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#coursesModal" onclick="assignCourse(this)"> Assign Course</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" id="linux">
+                    <img src="Images/linux.png" alt="linux course" class="card-img-top">
+                    <div class="card-body">
+                        <hr>
+                        <h4 class="card-title">Linux</h4>
+                            <a href="secondary#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#coursesModal" onclick="assignCourse(this)"> Assign Course</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" id="web">
+                    <img src="Images/web.png" alt="WWW Course" class="card-img-top">
+                    <div class="card-body">
+                        <hr>
+                        <h4 class="card-title">How Web Works?</h4>
+                            <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#coursesModal" onclick="assignCourse(this)"> Assign Course</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<!-- ---------------------------------------------MODAl FOR ALLOTMENT OF COURSES---------- -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#coursesModal">Courses Allotment</button> -->
+  
+<!-- Modal -->
+  <div class="modal fade " id="coursesModal" tabindex="-1" role="dialog" aria-labelledby="coursesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="coursesModalLabel">Update Courses</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="coursesModalBody">
+        
+            <div class="row">
+                <div class="col-4">
+                  <div class="list-group" id="list-tab" role="tablist">
+                    
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="tab-content" id="nav-tabContent">
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="saveChanges()" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- ---------------------------------------------MODAl FOR UPDATING COURSES---------- -->
+  <center>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cModal" onclick="updateCourses(this)" id="cModalBtn">Courses Allotment</button>
+</center>
+<!-- Courses Modal -->
+<div class="modal fade " id="cModal" tabindex="-1" role="dialog" aria-labelledby="cModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cModalLabel">Add/Remove Course</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeBtn">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="cModalBody">
+            <form action="dashboard.html" method="GET" id="loginForm">
+                <div class="row">
+                    <div class="form-side col-lg-12 mx-auto">
+                        <div class="welcome">
+                            <div class="col padding-form">
+                                <input type="text" placeholder="Enter Course Name" class="form-control padding-form"  id="newCourseName" >
+                            </div>	
+                            <div class="col padding-form">
+                                <input type="file"  class="form-control padding-form" id="newCourseImage" >
+                            </div>	
+                            <div class="col padding-form">
+                                <input type="button"  class="form-control padding-form btn-primary" value="Add" onclick="addCourse('','')" data-dismiss="modal">
+                            </div>	
+                        </div>
+                    </div>
+                </div>
+             </form>
+             <hr>
+             <div class="row">
+                <div class="form-side col-lg-12 mx-auto">
+                    <h5 class="padding-form">Remove Courses</h5>
+                    <div class="welcome">
+                        <div class="col padding-form">
+                            <div class="list-group" id="listCourses" role="tablist">
+                                
+                            </div>
+                        </div>	
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="updateCourses(this)" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+</body>
+</html>
