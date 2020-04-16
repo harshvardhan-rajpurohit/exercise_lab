@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tasks 2 and 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="JS/task-2-3.js"></script>   
+    <link rel="stylesheet" href="CSS/task-2-3.css">  
+</head>
+<body>
+    
+<!-- ------------------------------NAV BAR ---------------------------------- -->
+<nav class ="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class ="container-fluid">
+        <div class="navbar-brand">
+            <img src="Images/rapidops.png" alt="Rapidops">
+        </div>
+        <div class="navbar-item">
+            <p class="lead">Tasks 2 and 3</p>
+        </div>
+        <div class="navbar-brand">
+            <a href="login_signup_page.html" class="btn btn-outline-secondary btn-sm">Task1</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ------------------------------LIST --------------------------------- -->
+<div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-lg-4" id="listView">
+                <h2>Task 2</h2>
+                <hr>
+                <input type="text" name="searchText" id="textEntered" onkeyup="selectItem()">
+                <hr>
+            </div>
+            <div class="col-lg-4">
+
+            </div>
+            <div class="col-lg-4 ">
+                <h2>Task 3</h2>
+                <hr>
+                <div class="row task3">
+                    <div class="col-sm-4" id="box3">
+                        BOX3
+                        <p></p>
+                    </div>
+                    <div class="col-sm-4">
+                        BOX1
+                        <p> <a href="#" id="box1" class="btn-outline-info" onclick="box1Func()"> Click me first!</a></p>
+                    </div> 
+                </div>
+                <div class="row task3">
+                    <div class="col-sm-4" id="box2">
+                        BOX2
+                    </div>
+                    <div class="col-sm-4" id="box4">
+                        BOX4
+                    </div> 
+                </div>
+            </div>
+    </div>    
+</div>
+</body>
+</html>

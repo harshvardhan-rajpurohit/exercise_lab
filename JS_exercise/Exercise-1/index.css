@@ -1,0 +1,200 @@
+@font-face{
+    font-family: clock;
+    src: url(portaledge/Portaledge\ Demo.ttf);
+}
+@font-face{
+    font-family: popstick;
+    src: url(popstick/Popstick-Demo-Regular.ttf);
+}
+@font-face{
+    font-family: japanola;
+    src: url(japanola/Japanola.otf);
+}
+@font-face{
+    font-family: watch;
+    src: url(crystal_watch/Crystal\ Watch.ttf);
+}
+@font-face{
+    font-family: networld;
+    src: url(networld/NetWorld.ttf);
+}
+
+body{
+    background-color: #050801;
+}
+#dat {
+    font-family: clock;
+    font-size: xx-large;
+}
+.navbar-brand,
+.navbar-item{
+    font-family: popstick;
+    font-size: xx-large;
+    color: aliceblue;
+    display: inline-block;
+}
+/* ------------------------------------------------------STOPWATCH  */
+.stpw{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.stpw_heading{
+    font-family: watch;
+    font-size: xx-large;
+    color: yellow;
+}
+.stpw_digits{
+    font-family: watch;
+    display: block;
+    font-size: xxx-large;
+    color: tomato;
+}
+
+/* ----------------------------------------------------------------NEON SECTION */
+.neon_section_back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    flex-direction: column;
+    background: #050801;
+    color: honeydew;
+    padding-top: 2em;
+    font-size: x-large;
+}
+
+.neon_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    flex-direction: row;
+    background: #050801;
+}
+.neon_a{
+    font-family: clock;
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px; 
+    margin: 5px 20px;
+    color: #03e9f4;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    overflow: hidden;
+    letter-spacing: 4px;
+}
+
+.start_btn:hover{
+    background: lightgreen;
+    color: #050801;
+    box-shadow: 0 0 5px #03e903,
+                0 0 25px #03e903,
+                0 0 50px #03e903,
+                0 0 200px #03e903;
+    text-decoration: none;
+}
+.stop_btn:hover{
+    background: lightcoral;
+    color: #050801;
+    box-shadow: 0 0 5px #e90303,
+                0 0 25px #e90303,
+                0 0 50px #e90303,
+                0 0 200px #e90303;
+    text-decoration: none;
+}
+.resume_btn:hover{
+    background: lightblue;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+    text-decoration: none;
+}
+.reset_btn:hover{
+    background: lightyellow;
+    color: #050801;
+    box-shadow: 0 0 5px #e9e903,
+                0 0 25px #e9e903,
+                0 0 50px #e9e903,
+                0 0 200px #e9e903;
+    text-decoration: none;
+}
+
+
+/* --------------------------------STOPWATCH-ANIMATION--------------------- */
+.stpw_bar_start{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: bar_animation1 1.2s linear infinite;
+}
+@keyframes bar_animation1{
+    0%
+    {
+        left: -100%;
+    }
+    50%
+    {
+        left: 50%;
+    }
+    100%{
+        left:100%
+    }
+}
+.stpw_bar_stop{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: bar_animation2 0s linear infinite;
+}
+
+/* -------------------------------------------Table------------------------------ */
+.jumbotron{
+    background: radial-gradient(white ,transparent );
+background-blend-mode: overlay;
+}
+.table_sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: japanola;
+    font-size: large;
+}
+.table_padding{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    flex-direction: row;
+}
+.table_padding > input{
+    margin: 1em;
+}
+.td_border{
+    border: black solid 2px;
+    padding: 0.2em 2em;
+    text-align: center;
+    word-break: break-all;
+}
+ h2{
+    font-family: networld;
+    text-transform: uppercase;
+    font-size: xxx-large;
+    font-weight: bold;
+}
+table{
+    table-layout: fixed;
+}
+

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html,body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+.navbar{
+  padding: .8rem;
+}
+.navbar-brand,
+.navbar-item{
+    font-family: poppins;
+    font-size: large;
+    color: aliceblue;
+    display: inline-block;
+}
+.padding{
+    padding-bottom: 2rem;
+  }
+.navbar  a {
+    font-family: poppins;
+    float: right;
+    font-size: small;
+}
+.navbar-brand img{
+  width: 40%;
+}
+.card img{
+  width: 50%;
+  align-self: center;
+  padding-top: 10px;
+}
+#git {
+  background-image: url(../Images/git_back.png);
+  background-size: 140%;
+  background-repeat: no-repeat;
+  background-color: #ababab;
+  background-blend-mode: screen;
+  background-position-y: -2.4em;
+  background-position-x: -4em;
+}
+#html {
+  background-image: url(../Images/html-back.png);
+  background-size: 140%;
+  background-position-x: -4em;
+  background-repeat: no-repeat;
+  background-color: #ababab;
+  background-blend-mode: screen;
+  background-position-y: -0.3em;
+}
+#linux {
+  background-image: url(../Images/linux-back.png);
+  background-size: 140%;
+  background-repeat: no-repeat;
+  background-color: #ababab;
+  background-blend-mode: screen;
+  background-position-y: -1.5em;
+}
+#js {
+  background-image: url(../Images/js-back.png);
+  background-size: 140%;
+  background-repeat: no-repeat;
+  background-color: #ababab;
+  background-blend-mode: screen;
+  background-position-y: -3.2em;
+  background-position-x: -2em;
+}
+#css {
+  background-image: url(../Images/css-back.png);
+  background-size: 140%;
+  background-repeat: no-repeat;
+  background-color: #ababab;
+  background-blend-mode: screen;
+  background-position-y: -1em;
+}
+#web {
+  background-image: url(../Images/web-back.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #ababab;
+  background-blend-mode: screen;
+  background-position-y: -7.7em;
+}
+.card a:hover{
+background-color: royalblue;
+}

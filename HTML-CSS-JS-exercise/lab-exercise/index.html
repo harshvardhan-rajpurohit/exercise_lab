@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Strict Webpage using HTML5,CSS3 and Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--Code to enable popovers-->
+	<script>
+		$(document).ready(function(){
+		  $('[data-toggle="popover"]').popover();
+		});
+		</script>
+
+<!--Navigation section-->   
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid navbar-menu">
+       <img src="images/logo.png" alt="Logo" height="30rem" width="30rem">
+       <a class = "navbar-brand" href="#"><h2 class="logo-text">STRICT</h2></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+    data-target="#navbarResponsive">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto top-menu">
+            <li class="nav-item active">
+            <a href="#" class="nav-link">About us</a>
+            </li>
+            <li class="nav-item dropdown" >
+                <a href="#" data-toggle="dropdown" class="nav-link">Services </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="nav-link-dropdown">Services Main 1 </a></li>
+                    <li><a href="#" class="nav-link-dropdown">Services Main 2 </a></li>
+                    <li><a href="#" class="nav-link-dropdown">Services Main 3 </a></li>
+                    <li><a href="#" class="nav-link-dropdown">Services Main 4 </a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+
+<!--info section-->   
+<div class="container-fluid">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h3 class="display-4 padding"> Simple & pure design.</h3>
+			<div class="col-12">
+				<p class="welcome-text"> Designers everywhere with admiration upon seeing a web design
+                    and exclaim "its beautiful" are a coutless number of webdesign round-ups dedicated 
+                to 'clean' design and it is a term thrown around quite a bit in the web design 
+            community. it can be easy to spot a good example of clean design.				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Three columns seciton-->  
+<div class="container-fluid padding-3col">
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<div class="padding-col">
+				<i class="fas fa-mobile-alt"></i>
+			</div>
+			<!--<i class="fas fa-mobile-alt"></i>-->
+			<h4>Optimized for all devices</h4>
+			<p class="text-3col">STRICT has been designed to be fully responsice on all devices.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<div class="padding-col">
+			<i class="fas fa-paper-plane"></i>
+		</div>
+			<h4>Clean & Minimal Design</h4>
+			<p class="text-3col">This multipurpose theme is especially created to be used for different projects.</pclass="text-3col">
+		</div>
+		<div class="col-sm-12 col-md-4">
+			<div class="padding-col">
+			<i class="fas fa-bullhorn"></i>
+		</div>
+			<h4>Font Awesome Icon</h4>
+			<p class="text-3col">This multipurpose theme is especially created to be used for different projects.</p>
+		</div>
+	</div>
+</div>
+
+<!--Image section-->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h4 >Showcase your work like a pro.</h4>
+			<hr class="light">
+			<div class="col-12">
+				<p class="lead">Contact me if you like my work.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid padding">
+	<div class="container text-center">
+		<div class="row">
+			<figure class="col-md">
+				<div class="hovereffect">
+				<img src="images/cycles1.jpg" alt="Cycles" class="img-thumbnail">
+				<div class="overlay padding">
+					<button class="btn btn-secondary btn-outline-light " data-toggle="modal" data-target=".cycle1-modal-lg"><i class="fas fa-search"></i></button>
+					<button class="btn btn-secondary btn-outline-light" data-toggle="popover" data-content="https://unsplash.com/photos/0W7QAPNJeQA" ><i class="fas fa-link" ></i></button>
+				</div>
+				</div>
+			</figure>
+			<figure class="col-md">
+				<div class="hovereffect">
+				<img src="images/3d-skull.jpg" alt="Skull image" class="img-thumbnail">
+				<div class="overlay padding">
+					<button class="btn btn-secondary btn-outline-light" data-toggle="modal" data-target=".skull-modal-lg"><i class="fas fa-search"></i></button>
+					<button class="btn btn-secondary btn-outline-light" data-toggle="popover" data-content="https://unsplash.com/photos/38XhGPwzI3U" class="info"><i class="fas fa-link"></i></button>
+				</div>
+				</div>
+			</figure>
+			<figure class="col-md">
+				<div class="hovereffect">
+				<img src="images/mugs.jpg" alt="2 mugs" class="img-thumbnail">
+				<div class="overlay padding">
+					<button class="btn btn-secondary btn-outline-light" data-toggle="modal" data-target=".mugs-modal-lg"><i class="fas fa-search"></i></button>
+					<button class="btn btn-secondary btn-outline-light" data-toggle="popover" data-content="https://unsplash.com/photos/J-G-j-y8r6c" class="info"><i class="fas fa-link"></i></button>
+				</div>
+			</div>
+			</figure>
+		</div>
+		<div class="row">
+			<figure class="col-md">
+				<div class="hovereffect">
+				<img src="images/coffee.jpg" alt="Coffee" class="img-thumbnail">
+				<div class="overlay padding">
+					<button class="btn btn-secondary btn-outline-light" data-toggle="modal" data-target=".coffee-modal-lg"><i class="fas fa-search"></i></button>
+					<button class="btn btn-secondary btn-outline-light" data-toggle="popover" data-content="https://unsplash.com/photos/cugjsuIRJ7Y" class="info"><i class="fas fa-link"></i></button>
+				</div>
+			</div>
+			</figure>
+			<figure class="col-md">
+				<div class="hovereffect">
+				<img src="images/cycle2.jpg" alt="Cycles" class="img-thumbnail">
+				<div class="overlay padding">
+					<button class="btn btn-secondary btn-outline-light" data-toggle="modal" data-target=".cycles-modal-lg"><i class="fas fa-search"></i></button>
+					<button class="btn btn-secondary btn-outline-light" data-toggle="popover" data-content="https://unsplash.com/photos/enGbV7gcoH4" class="info"><i class="fas fa-link"></i></button>
+				</div>
+			</div>
+			</figure>
+			<figure class="col-md">
+				<div class="hovereffect">
+				<img src="images/cycle3.jpg" alt="Cycles" class="img-thumbnail">
+				<div class="overlay padding">
+					<button class="btn btn-secondary btn-outline-light" data-toggle="modal" data-target=".cycle3-modal-lg"><i class="fas fa-search"></i></button>
+					<button class="btn btn-secondary btn-outline-light" data-toggle="popover" data-content="https://unsplash.com/photos/FxWXeUXJMKY" class="info"><i class="fas fa-link"></i></button>
+				</div>
+			</div>
+			</figure>
+		</div>
+	</div>
+</div>
+
+
+<!--contact seciton--> 
+<div class="container-fluid padding-contact">
+	<div class="row text-center">
+		<div class="col-12">
+			<h2 >Stay with us</h2>
+			<div class="col-12">
+				<p>We ensure quality and support.</p>
+			</div>
+		</div>
+	</div>
+<form action="#" method="POST" >
+	<div class="row">
+	<div class="form-group col-lg-7 mx-auto">
+		<div class="welcome">
+			<div class="col padding-form">
+				<input type="text" placeholder="Full name" class="form-control padding-form" required  >
+			</div>	
+			<div class="col padding-form">
+				<input type="email" placeholder="Email Address" class="form-control padding-form" required >
+			</div>
+			<div class="col padding-form">
+				<textarea name="message" id="text" cols="30" rows="10" class="form-control padding-form" placeholder="Message"></textarea>
+			</div>
+			<div class="col padding-form">
+				<label class="checkbox"><input type="checkbox">&nbsp;&nbsp;&nbsp;Subscribe Newsletter</label>
+				<button class="btn btn-outline-light btn-primary btn-lg" type="submit">Send</button>
+			</div>
+		</div>
+	
+	</div>
+</div>
+</form>
+</div>
+
+<!--Modal for zoomed image-->
+<div class="modal fade cycle1-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-header modal-display">
+		<img src="https://images.unsplash.com/photo-1490141190234-b288c1065afb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" alt="Cycle1">
+	  </div>
+	</div>
+  </div>
+
+<div class="modal fade skull-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-header modal-display">
+		<img src="https://images.unsplash.com/photo-1518732714860-b62714ce0c59?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Skull">
+	  </div>
+	</div>
+  </div>
+
+  <div class="modal fade mugs-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-header modal-display">
+		<img src="https://images.unsplash.com/photo-1532379902018-43e42654cf2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Skull">
+	  </div>
+	</div>
+  </div>
+
+  <div class="modal fade coffee-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-header modal-display">
+		<img src="https://images.unsplash.com/photo-1462473325456-4dbb7490895f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" alt="Skull">
+	  </div>
+	</div>
+  </div>
+
+  <div class="modal fade cycles-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-header modal-display">
+		<img src="https://images.unsplash.com/photo-1501470364612-5a3e19052dc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80" alt="Skull">
+	  </div>
+	</div>
+  </div>
+
+  <div class="modal fade cycle3-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-header modal-display">
+		<img src="https://images.unsplash.com/photo-1460474684596-3c6d3f1abb96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Skull">
+	  </div>
+	</div>
+  </div>
+
+<!--footer section-->
+<footer>
+	<div class="row tsext-center">
+		<div class="col-12 social">
+			<h5>&copy;Copyright 2014,STRICT</h5> 
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-google-plus-g"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-facebook"></i></a>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
+

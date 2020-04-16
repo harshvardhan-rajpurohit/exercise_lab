@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rapidops Talent-LMS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS/login_signup_page.css">
+    <script src="JS/login_signup_page.js"></script>     
+</head>
+<body>
+        
+    <section class="container">
+        <div id="card" >
+          <figure class="front">
+                <div class="logo"><img src="Images/rapidops.png" />
+                </div>
+                <form action="dashboard.html" method="GET" id="signupForm">
+                    <div class="row">
+                        <div class="form-side col-lg-7 mx-auto">
+                            <h1>Signup</h1>
+                            <div class="welcome">
+                                
+                                <div class="col padding-form">
+                                    <input type="text" placeholder="Enter Username" class="form-control padding-form" required id="username">
+                                </div>	
+                                
+                                <div class="col padding-form">
+                                    <input type="password" placeholder="Enter Password" class="form-control padding-form" required  id="password">
+                                </div>	
+                                
+                                <div class="col padding-form">
+                                    <input type="password" placeholder="Re-enter Password" class="form-control padding-form" required  id="reenterPassword">
+                                </div>	
+                                    
+                                <div class="col padding-form">
+                                    <label for="adminRadioBtn">Admin</label>
+                                    <input type="radio" name="radioBtn" id="adminRadioBtn">
+                                    <label for="studentRadioBtn">Student</label>
+                                    <input type="radio" name="radioBtn" id="studentRadioBtn">
+                                    <input type="button" class="btn btn-outline-primary btn-primary btn-md" onclick="signupUser()" value="Signup!">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+            </figure>
+          
+          <figure class="back">
+                <div class="logo"><img src="Images/rapidops.png" />
+                </div>
+                <form action="dashboard.html" method="GET" id="loginForm">
+                    <div class="row">
+                        <div class="form-side col-lg-7 mx-auto">
+                            <h1>Login</h1>
+                            <div class="welcome">
+                                <div class="col padding-form">
+                                    <input type="text" placeholder="Enter Username" class="form-control padding-form" required id="usernameLogin">
+                                </div>	
+                                
+                                <div class="col padding-form">
+                                    <input type="password" placeholder="Enter Password" class="form-control padding-form" required  id="passwordLogin">
+                                </div>	
+                                    
+                                <div class="col padding-form">
+                                    <label for="adminRadioBtn">Admin</label>
+                                    <input type="radio" name="radioBtn" id="adminRadioBtnLogin">
+                                    <label for="studentRadioBtn">Student</label>
+                                    <input type="radio" name="radioBtn" id="studentRadioBtnLogin">
+                                    <input type="button" class="btn btn-outline-primary btn-primary btn-md" onclick="loginUser()" value="Login" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                 </form>
+            </figure>
+            
+        </div>
+      </section>
+      
+      <section id="options">
+          <p id="message">Already have an account?
+          <p><input type="button" id="flip" class="powered" value="Click here"></p>
+      </section>
+      <br><br>
+      <section id="options">
+        <p id="message">See Task 2 & 3: <a href="task-2-3.html" class="btn btn-outline-light btn-sm">Task 2-3</a>
+    </section>
+
+<script>
+$('#flip').on('click', function(e) {
+	e.preventDefault();
+	
+  
+	$('#card').toggleClass('flipped');
+  
+  $('#flip').toggleClass('powered');
+  
+  if ($('#card').hasClass('flipped')) {
+    $('#message').text("Need to sign up?");
+    $('#flip').text("Create an account");
+  } else {
+            
+    $('#message').text("Already have an account?");
+    $('#flip').text("Log in");
+  }
+
+});
+</script>
+</body>
+            
+</html>

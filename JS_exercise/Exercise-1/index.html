@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!-- Task1 -->
+    <nav class ="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class ="container-fluid">
+            <div class="navbar-brand">
+                <p id="time"></p>
+            </div>
+            <div class="navbar-item">
+                JS Exercise
+            </div>
+            <div class="navbar-brand">
+                <p id="dat"></p>
+            </div>
+        </div>
+    </nav>
+
+
+<!-- stopwatch-->
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col-lg stpw">
+            <div class="neon_section_back">        
+                <div class="bar">
+                    <span id="h_bar"></span>
+                </div>
+                <p class="stpw_heading">Stopwatch&nbsp;<br><br></p>
+                <p id="stopwatch" class="stpw_digits">00 : 00 : 00 : 00</p>
+                <div class="neon_section">
+                    <a href="#" class="neon_a start_btn" onclick="start()" id="start_btn">Start</a>
+                    <a href="#" class="neon_a stop_btn" onclick="stop()">Stop</a>
+                    <a href="#" class="neon_a resume_btn" onclick="resume()" id="res_id">Resume</a>
+                    <a href="#" class="neon_a reset_btn" onclick="reset()">Reset</a>
+                </div>
+                <!-- <span class="stpw_bar"></span> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- table-task2 -->
+<div class="container-fluid ">
+    <div class="row jumbotron">
+        <div class="col-lg">
+            <div class="table_sec">
+            <h2 >Table</h2>
+            <div class="table_padding">
+                <input type="text" name="first_name" id="frst_name" placeholder="First Name" required>
+                <input type="text" name="last_name" id="lst_name" placeholder="Last Name" required>
+                <input type="button" value="Add" onclick="add_row()" id="add_update_btn">
+                <input type="button" value="Populate Table" onclick="render_table()" id="add_update_btn">
+            </div>
+                <table id="table_main">
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+    
+       
+    
+</body>
+</html>
