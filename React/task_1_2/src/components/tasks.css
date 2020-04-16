@@ -1,0 +1,17 @@
+/* .mid{
+    margin-left: 25em;
+} */
+
+table,th,td{
+    border: thin solid black ;
+    table-layout: fixed;
+}
+
+.table_sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: japanola;
+    font-size: large;
+}
